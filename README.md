@@ -8,7 +8,7 @@ Para entender os motivos que levam um país a contrair uma dívida internacional
 * Quais os montantes totais por tipo de débito
 
 
-# Dataset
+# Variáveis
 
 O arquivo analisado possui cinco colunas:
 1. country_name -- Nome por extenso dos países
@@ -17,7 +17,7 @@ O arquivo analisado possui cinco colunas:
 4. indicator_code -- código do indicador
 5. debt -- valor da dívida (em dólar americano)
 
-### Country
+### Países
 
 ```
 %%sql
@@ -28,7 +28,7 @@ FROM international_debt;
 
 Existem 124 países listados no arquivo
 
-### Indicator
+### Indicadores
 
 ```
 %%sql
@@ -40,7 +40,7 @@ ORDER BY distinct_debt_indicators
 ```
 Existem 25 diferentes indicadores
 
-# Valor total que o banco emprestou
+# Valor distribuído em empréstimos pelo Banco Mundial
 
 ```
 %%sql
@@ -64,7 +64,7 @@ LIMIT 1;
 ```
 A China tem o maior empréstimo entre todos os países análisados, um valor total de USD 285.793.494.734,20
 
-# Filtrando por indicadores
+# Principais indicadores
 ```
 %%sql
 SELECT 
@@ -82,9 +82,6 @@ LIMIT 10;
 * PPG, private creditors - US$ 1644024067.650806481
 * PPG, bilateral - US$ 1220410844.421518983
 * PPG, official creditors - US$ 1082623947.653623188
-
-
-
 
 
 Podemos ver os principais motivos que levam os países a pedirem empréstimo. Existe uma queda abrupta entre o primeiro e o segundo indicador e do segundo para o terceiro também é uma queda considerável, indicando que esses são os principais motivos para os países contraírem dividas com o Banco Mundial.
