@@ -1,3 +1,13 @@
+# **Análise dos empréstimos feitos pelo Banco Mundial**
+
+Notebook: [Analyze International Debt Statistics](https://github.com/GuilhermeBrejeiro/Analyze-International-Debt-Statistics/blob/master/notebook.ipynb)
+
+Data from: [The World Bank](https://www.worldbank.org/)
+
+Language: SQL 
+
+DataCamp Premium Project
+
 # Premissas
 
 Esse projeto consiste na análise das dívidas adquiridas mundialmente. 
